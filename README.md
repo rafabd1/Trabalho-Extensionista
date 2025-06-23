@@ -20,8 +20,8 @@ Esta é uma API para detectar se um determinado texto é phishing ou legítimo. 
 
 1.  **Clone o repositório:**
     ```bash
-    git clone <URL_DO_REPOSITORIO>
-    cd <NOME_DO_DIRETORIO>
+    git clone https://github.com/rafabd1/Trabalho-Extensionista
+    cd Trabalho-Extensionista
     ```
 
 2.  **Crie e ative o ambiente Conda: (Opicional)**
@@ -49,9 +49,8 @@ Este comando irá baixar o dataset, treinar o modelo e salvar os arquivos `vecto
 
 1.  Com o modelo treinado, inicie o servidor da API:
     ```bash
-    uvicorn src.main:app --reload
+    uvicorn src.main:app --reload --port 8080
     ```
-    O servidor agora iniciará rapidamente, pois apenas carrega os artefatos pré-treinados.
 
 2.  Após a inicialização, a API estará disponível em `http://127.0.0.1:8080`.
 
